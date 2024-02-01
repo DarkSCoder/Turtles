@@ -1,0 +1,399 @@
+*::selection{
+    background-color:   #4dad0f  ;
+    color: white;
+}
+
+header{
+    background-image:linear-gradient(to right, #4facfe6d 0%, #00f1fe43 100%),url('../Img/si_560_460.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    padding: 0.1px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(  #55c6e4 ,#6ba40e,#b7e867 , #fffeb6  );
+    margin: 0;
+    font-family: 'Arial','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-variant: small-caps;
+    line-height: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    margin-bottom: auto;
+}
+
+body > hr{
+    background-color: grey;
+    min-width: 80px;
+    max-width: 650px;
+}
+
+.logoimage a{
+    padding: 0.1px;
+}
+
+.logoimage img{
+    width: 150px;
+    height:150px;
+    border-radius: 200px;
+    margin: 4px auto;
+    display: flex;
+}
+
+.logoimage h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    display: flex;
+    border-bottom: 1px grey solid;
+    min-height: 20px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.active{
+    color: black;
+    font-size: 20px;
+}
+
+nav a{
+    padding: 10px;
+    display: inline-block;
+    color: green;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15px;
+    max-width: auto;
+    max-height: 80px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+nav a:hover{
+    background-color: lightgreen;
+    border-radius: 250px;
+    animation: ease-in-out;
+    transition: 1s;
+}
+
+.login{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    right: 0;
+    overflow: inherit;
+}
+
+.login a{
+    padding: 0;
+    cursor: pointer;
+}
+
+.login img{
+    max-width:40px;
+    max-height:40px;
+    filter: drop-shadow(0 0 10px #B1D3CD);
+}
+
+h1,h2{
+    color: dodgerblue;
+    text-align: center;
+}
+
+section{
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 8px;
+    padding: 0.1px;
+}
+
+section p{
+    margin-right: 6px;
+    padding: 6px;
+    text-align: justify;
+}
+
+.registration{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 1px auto;
+    text-align: center;
+    border-radius: 20%;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%);
+    animation: ease-in-out;
+    transition: 1.5s;
+    display: none;
+    /* opacity: 0; */
+}
+
+.registration div.regimg img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.registration hr{
+    display: inline-block;
+    width: 40%;
+    margin: 8px auto;
+}
+
+.registration p{
+    display: inline-block;
+    margin: 5px auto;
+}
+
+.registration form input{
+    margin: 5px auto;
+    height: 25px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.registration form input:focus{
+    outline: auto #B1D3CD;
+}
+
+.registration form input.boton{
+    margin: 8px auto;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10%;
+    transition: 1.5s;
+}
+
+.registration form input.boton:hover{
+    background-color: #55c6e4;
+    transition: 1.5s;
+}
+
+.acceder{
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10%;
+    animation: ease-in-out;
+    transition: 1.5s;
+    box-sizing: border-box;
+    color: black;
+    border: 1px solid black;
+}
+
+.acceder:hover{
+    margin: 8px auto;
+    height: 30px;
+    width: 100px;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    animation: ease-in-out;
+    transition: 1.5s;
+}
+
+.registration:target{
+    display: initial;
+    transition: 2seg;
+    animation: ease-in-out;
+}
+.registration:focus-within{
+    box-shadow: 0 0 5px 5px greenyellow;
+}
+
+.accedercont{
+    width: 300px;
+    height: 230px;
+    background-color: white;
+    margin: 1px auto;
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%);
+    animation: ease-in-out;
+    transition: 1.5s;
+    display: none;
+}
+
+.accedercont form input{
+    margin: 5px auto;
+    height: 25px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.accedercont form input:focus{
+    margin: 5px auto;
+    height: 25px;
+    width: 80%;
+    outline: auto #55c6e4;
+}
+
+.accedercont form input.boton{
+    margin: 8px auto;
+    height: 30px;
+    width: 100px;
+    border: 1px solid #55c6e4;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10%;
+    animation: ease-in-out;
+    transition: 1.5s;
+}
+
+.accedercont form input.boton:hover{
+    background-color: #55c6e4;
+    animation: ease-in-out;
+    transition: 1.5s;
+}
+
+.accedercont a{
+    text-decoration: none;
+    color: black;
+}
+
+#acced:target{
+    display: initial;
+}
+
+.accedercont:focus-within{
+    box-shadow: 0 0 5px 5px #55c6e4;
+}
+
+footer {
+    /* display: flex; */
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid grey;
+    justify-content: center;
+    max-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+footer a img{
+    max-height: 50px;
+    min-width: 50px;
+    filter: drop-shadow(0 0 50px #B1D3CD);
+}
+
+.cards{
+    display: flex;
+    height: 400px;
+    padding: 0.1px;
+}
+
+.card{
+    background-color: #fafafa;
+    text-align: justify;
+    width: 280px;
+    height: 350px;
+    margin: 10px auto;
+    padding: 0.1px 4px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 20px 1px dodgerblue;
+    border: 1px solid grey;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.card img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 8px auto;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 2px solid black;
+    box-shadow: 0 1px 10px 2px lightgreen;
+}
+
+.card h4{
+    display: block;
+    text-align: center;
+}
+
+.mapa{
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin: 2px auto;
+}
+
+.cards:hover{
+    height: 530px;
+    transition: 1s;
+}
+
+.cabo:hover{
+    z-index: 1;
+    width: 800px;
+    height: 530px;
+    transition: 1s;
+}
+
+.citma:hover{
+    z-index: 1;
+    width: 800px;
+    height: 530px;
+    transition: 1s;
+}
+
+.univ:hover{
+    z-index: 1;
+    width: 800px;
+    height: 530px;
+    transition: 1s;
+}
+
+.me:hover{
+    z-index: 1;
+    width: 800px;
+    height: 530px;
+    transition: 1s;
+}
+.me .contactos h5{
+    display: inline;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.me:hover .imgpp{
+    float: right;
+    margin-left: 15px;
+}
+
+.me .contactos .qr label{
+    position: relative;
+    bottom: 100px;
+}
+
+.me .contactos .qr img{
+    display: inline;
+    margin-left: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
