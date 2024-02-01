@@ -205,6 +205,7 @@ section p{
 
 .registration:target{
     display: initial;
+    z-index:10;
     transition: 2seg;
     animation: ease-in-out;
 }
@@ -269,6 +270,7 @@ section p{
 
 #acced:target{
     display: initial;
+    z-index:10;
 }
 
 .accedercont:focus-within{
