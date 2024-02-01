@@ -133,6 +133,7 @@ section p{
     animation: ease-in-out;
     transition: 1.5s;
     display: none;
+    z-index:10;
     /* opacity: 0; */
 }
 
@@ -205,7 +206,6 @@ section p{
 
 .registration:target{
     display: initial;
-    z-index:10;
     transition: 2seg;
     animation: ease-in-out;
 }
@@ -226,6 +226,7 @@ section p{
     transform: translate(-50%);
     animation: ease-in-out;
     transition: 1.5s;
+    z-index:10;
     display: none;
 }
 
@@ -270,7 +271,6 @@ section p{
 
 #acced:target{
     display: initial;
-    z-index:10;
 }
 
 .accedercont:focus-within{
