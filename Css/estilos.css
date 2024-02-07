@@ -4,7 +4,7 @@
 }
 
 header{
-    background-image:linear-gradient(120deg,transparent, #72afd3) ,url('../Img/hitoshi-namura-IRzfQm79qxQ-unsplash.jpg');
+    background-image:linear-gradient(120deg,transparent, #72afd3) ,url('../Img/hitoshi-namura-IRzfQm79qxQ-unsplash.webp');
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body{
     padding: 0.1px;
     position: relative;
     background-repeat: no-repeat;
-    background-image: /*linear-gradient(120deg,transparent, #66a6ff),*/url(../Img/baia-do-sancho_5120x2880_xtrafondos.com.jpg);
+    background-image: /*linear-gradient(120deg,transparent, #66a6ff),*/url(../Img/baia-do-sancho_5120x2880_xtrafondos.com.webp);
     background-position: center;
     background-size: cover;
     backdrop-filter: contrast(40%);
@@ -464,7 +464,7 @@ footer a img{
 
 
 @media screen and (max-width:732px){
-   header{
+    header{
         background-size: cover;
         background-position: right;
     }
