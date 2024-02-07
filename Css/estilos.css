@@ -22,7 +22,6 @@ body{
     font-family: 'Arial','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: small;
     font-variant: small-caps;
-    font-weight: bold;
     line-height: 20px;
     box-sizing: border-box;
     width: 100%;
@@ -169,14 +168,16 @@ section{
     box-sizing: border-box;
     height: auto;
     margin-bottom: 8px;
-    padding: 0.1px;
+    padding: 0.1px 8px;
     position: relative;
+
 }
 
 section p{
     margin-right: 6px;
     padding: 6px;
     text-align: justify;
+    font-weight: bold;
 }
 
 .registration{
