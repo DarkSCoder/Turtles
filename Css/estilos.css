@@ -464,6 +464,11 @@ footer a img{
 
 
 @media screen and (max-width:732px){
+    header{
+        background-size: cover;
+        background-position: right;
+    }
+    
     nav{
         display: none;
     }
