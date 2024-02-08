@@ -17,7 +17,7 @@ body{
     background-image: /*linear-gradient(120deg,transparent, #66a6ff),*/url(../Img/baia-do-sancho_5120x2880_xtrafondos.com.webp);
     background-position: center;
     background-size: cover;
-    backdrop-filter: contrast(40%);
+    backdrop-filter: contrast(30%);
     margin: 0;
     font-family: 'Arial','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: small;
@@ -123,9 +123,10 @@ nav{
 nav a{
     padding: 10px;
     display: inline-block;
-    color: black;
+    color: #00368f;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
     margin-left: 15px;
     max-width: auto;
     max-height: 80px;
@@ -160,7 +161,7 @@ nav a:hover{
 }
 
 h1,h2{
-    color: #00c6fb;
+    color: #00368f;
     text-align: center;
 }
 
@@ -194,7 +195,7 @@ section p{
     animation: ease-in-out;
     transition: 1.5s;
     display: none;
-    /* opacity: 0; */
+    z-index: 50;
 }
 
 .registration div.regimg img{
@@ -287,6 +288,7 @@ section p{
     animation: ease-in-out;
     transition: 1.5s;
     display: none;
+    z-index: 50;
 }
 
 .accedercont form input{
@@ -337,7 +339,6 @@ section p{
 }
 
 footer {
-    /* display: flex; */
     text-align: center;
     padding: 5px;
     border-top: 1px solid grey;
@@ -398,15 +399,17 @@ footer a img{
 }
 
 .mapa{
-    display: block;
+    display: none;
     width: 300px;
     height: 200px;
-    margin: 2px auto;
+    margin: 8px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px grey;
 }
 
 .cards:hover{
     height: 530px;
-    transition: 1s;
+    transition: .2s;
 }
 
 .cabo:hover{
@@ -416,6 +419,15 @@ footer a img{
     transition: 1s;
 }
 
+.cabo:hover img{
+    float: right;
+    text-align: justify;
+}
+
+.cabo:hover .mapa{
+    display: initial;
+}
+
 .citma:hover{
     z-index: 1;
     width: 800px;
@@ -423,11 +435,29 @@ footer a img{
     transition: 1s;
 }
 
+.citma:hover img{
+    float: right;
+    text-align: justify;
+}
+
+.citma:hover .mapa{
+    display: initial;
+}
+
 .univ:hover{
     z-index: 1;
     width: 800px;
     height: 530px;
     transition: 1s;
+}
+
+.univ:hover img{
+    float: right;
+    text-align: justify;
+}
+
+.univ:hover .mapa{
+    display: initial;
 }
 
 .me:hover{
@@ -440,6 +470,12 @@ footer a img{
     display: inline;
     margin-left: 5px;
     font-size: 12px;
+}
+
+.me a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .me:hover .imgpp{
@@ -494,4 +530,17 @@ footer a img{
         padding-top: 30vh;
         box-sizing: border-box;
     }
+}
+
+.prueba{
+    display: block;
+    color: transparent;
+    background-image: url(/Img/unnamed.jpg);
+    background-clip: text;
+    background-size: cover;
+    font-size: 100px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    padding: 19px;
 }
